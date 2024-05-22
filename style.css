@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    width: 100vw;
+    height: auto;
+    background-color:#ffe5d9;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.left{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    
+}
+.left h1{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+.left p{
+    margin-bottom: 45px;
+
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.btns button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+.btns button:first-child{
+    background-color: darkorange;
+    color: white;
+}
+.right{
+width:60%;
+height: auto;
+position: relative;
+}
+.right1{
+    width: 300px;
+    height: 300px;
+    margin-left: 150px;
+    background-image: url('images/image1.jpg');
+    background-size: cover;
+}
+
+.right2{
+width: 500px;
+height: 300px;
+margin-left: 200px;
+margin-top: -100px;
+background-image: url('images/image2.jpg');
+background-size: cover;
+}
+.right3{
+    width: 400px;
+    height: 300px;
+    margin-top: -150px;
+    background-image: url(images/image3.jpg);
+    background-size: cover;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;    
+    font-weight: bold;
+    font-size: 18px;
+}
+.bottom ul {
+    list-style: none;
+    display: flex;
+    align-items: center; 
+}
+
+.bottom ul li {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-left: -15px;
+}
+
+.bottom ul li:first-child {
+    margin-left: 0; 
+}
+
+.bottom ul li img {
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.data p{
+    margin-left:20px;
+    margin-top: 20px;
+
+}
+.down{
+    width: 20px;
+    height: 20px;
+}
+body{
+    overflow-x: hidden;
+}
+/* ------------------------------- *//* Large tablets and small laptops (992px and below) */
+@media (max-width: 992px) {
+    .main {
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .left {
+        width:40%;
+        padding: 20px;
+    }
+    .right{
+        width: 60%;
+    }
+    
+    .right2 {
+        width: 100%;
+        margin-top: -50px;
+        margin-left: 100px;
+    }
+    .right3 {
+        margin-top: -75px;
+    }
+    .btns {
+        justify-content: center;
+    }
+    .btns button {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .bottom ul li {
+        margin: 10px;
+    }
+    .data p {
+        margin: 15px 0;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .main {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left, .right {
+        width: 100%;
+        padding: 20px;
+    }
+    .right1, .right2, .right3 {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .right2 {
+        margin-top:-50px;
+        margin-left: 50px;
+    }
+    .right3 {
+        margin-top: 0;
+    }
+    .btns {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .btns button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .bottom {
+        flex-direction: column;
+    }
+    .bottom ul {
+        flex-direction: row;
+        width: 100%;
+
+    }
+    .bottom ul li {
+        margin: 5px 0;
+    }
+    .data p {
+        margin: 10px 0;
+    }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .main {
+        padding: 10px;
+    }
+    .left {
+        width: 100%;
+        padding: 30px;
+    }
+    .right {
+        width: 100%;
+        padding: 10px;
+    }
+    .right1, .right2, .right3 {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .btns {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .btns button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bottom ul {
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .bottom ul li {
+        margin: 5px 0;
+    }
+    .data p {
+        margin: 10px 0;
+    }
+}
