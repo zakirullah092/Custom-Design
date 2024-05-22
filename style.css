@@ -82,7 +82,7 @@ background-size: cover;
     width: 400px;
     height: 250px;
     margin-top: -150px;
-    background-image: url(images/image3.jpg);
+    background-image: url('images/image3.jpg');
     background-size: cover;
     margin-left: -10px;
 }
